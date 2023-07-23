@@ -6,11 +6,14 @@
 
 public class lesson1{
     public static void main(String[] args){
-        int target = 100;
-        for(int i=0; i<target;i++){
-            if(i+(i-1)==target){
-                System.out.println("Done!");
+        int[] array ={0,1,2,3,4,5,6,7,8,9,10};
+        int target = 9;
+        for(int i = 1; i<array.length; i++){
+            int result = array[i]+array[i-1];
+            if(result==target){
+                System.out.println("Successful");
+                System.out.println(array[i] +"&"+array[i-1]);
             }
         }
+        }
     }
-}
